@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>hello</title>
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.45/jquery.mobile-1.4.5.min.js"></script>
+
+    </head>
+    <body>
+        <input type="text" id="name">
+        <input type="submit" id="OK">
+
+        <script>
+            $("#OK").click(function() {
+                $.ajax({
+                    url: 'postTest',
+                    async: true,
+                    type: 'POST',
+                    data: {
+                        text: $("#name").val()
+                    },
+                    dataType: 'json',
+                    success: function(data) {
+                        alert("success");
+                    },
+                    error: function(err) {
+                        alert("fail : ", err);
+                    }
+                });
+            });
+        </script>
+        <h1>test</h1>
+    </body>
+</html>

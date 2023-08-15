@@ -1,0 +1,51 @@
+* {
+    outline: 0;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
+
+
+#apply-div{
+    position: absolute;
+
+    width: 25%;
+    height: 25%;
+
+    top: 50% - width/2;
+    left: 50% - height/2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#apply-text {
+    position: absolute;
+    top: 50% - width/2;
+    left: 50% - height/2;
+}
+
+#canvas-btn {
+    position: absolute;
+
+}
